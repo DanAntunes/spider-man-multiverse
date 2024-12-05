@@ -1,11 +1,13 @@
 .gallery {
   padding: 20px;
   padding-left: 0;
+  position: absolute;
 }
 
 .gallery ul{
   display: flex;
   flex-direction: row;
+  position: inherit;
 }
 
 .gallery ul li{
