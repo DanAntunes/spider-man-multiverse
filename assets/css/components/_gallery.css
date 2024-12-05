@@ -7,7 +7,6 @@
 .gallery ul{
   display: flex;
   flex-direction: row;
-  position: inherit;
 }
 
 .gallery ul li{
