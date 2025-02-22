@@ -15,6 +15,7 @@ body::before {
   height: 100%;
   position: absolute;
   opacity: 0.2;
+  -webkit-transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
   transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
 }
 
@@ -39,10 +40,17 @@ body::before {
 
 .s-container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  perspective: 3000px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-perspective: 3000px;
+          perspective: 3000px;
 }
 
 .s-card {
@@ -50,35 +58,45 @@ body::before {
   width: 100%;
   height: 70vh;
   position: absolute;
+  -webkit-transition: -webkit-filter .5s ease-in-out;
+  transition: -webkit-filter .5s ease-in-out;
   transition: filter .5s ease-in-out;
+  transition: filter .5s ease-in-out, -webkit-filter .5s ease-in-out;
 }
 
 .s-card:nth-child(1) {
-  transform: rotateY(0deg) translateZ(50vw);
+  -webkit-transform: rotateY(0deg) translateZ(50vw);
+          transform: rotateY(0deg) translateZ(50vw);
 }
 
 .s-card:nth-child(2) {
-  transform: rotateY(120deg) translateZ(50vw);
+  -webkit-transform: rotateY(120deg) translateZ(50vw);
+          transform: rotateY(120deg) translateZ(50vw);
 }
 
 .s-card:nth-child(3) {
-  transform: rotateY(240deg) translateZ(50vw);
+  -webkit-transform: rotateY(240deg) translateZ(50vw);
+          transform: rotateY(240deg) translateZ(50vw);
 }
 
 .s-card__background {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   opacity: 1;
+  -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
 
 .s-card__image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   position: relative;
+  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
 }
 
@@ -89,23 +107,36 @@ body::before {
   position: absolute;
   width: 100%;
   bottom: 0;
+  -webkit-transition: bottom 1s ease-in-out;
   transition: bottom 1s ease-in-out;
 }
 
 .s-controller {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 3rem;
   bottom: 1.5rem;
   width: 100%;
 }
 
 .s-controller__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
   border: 2px solid white;
@@ -116,11 +147,15 @@ body::before {
   font-weight: bold;
   cursor: pointer;
   z-index: 1;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .s-controller__button:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .s-controller__button:nth-child(2) {
@@ -142,15 +177,16 @@ body::before {
 }
 
 /* Hover Animation */
-
 .s-card--hovered .s-card__background {
   cursor: pointer;
   opacity: 0;
 }
 
 .s-card--hovered .s-card__image {
-  transform: scale(1.4);
-  filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5));
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5));
+          filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5));
 }
 
 body#spider-man-01-hovered::before {
@@ -170,7 +206,8 @@ body[id^="spider-man-"]::before {
 }
 
 body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .s-card--hovered .s-card__title {
@@ -178,9 +215,17 @@ body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
 }
 
 .s-cards-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: calc(100vw / 3 - 10%);
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.4s ease-in;
+  transition: -webkit-transform 0.4s ease-in;
   transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
 }
