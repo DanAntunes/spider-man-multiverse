@@ -26,25 +26,31 @@
   <title>Spider-Man Multiverso | Todos os Homens-Aranha em Um Único Lugar</title>
 </head>
 <body>
-  <nav class="s-menu">
-    <ul>
-      <li class="s-menu__item">
-        <a href="/">Página Inicial</a>
-      </li>
-      <li class="s-menu__item">
-        <a href="#">Tobey Maguire</a>
-      </li>
-      <li class="s-menu__item s-menu__icon">
-        <img src="./assets/images/icons/spider.svg" alt="Spider-Man Multiverse">
-      </li>
-      <li class="s-menu__item">
-        <a href="#">Tom Holland</a>
-      </li>
-      <li class="s-menu__item">
-        <a href="#">Andrew Garfield</a>
-      </li>
-    </ul>
-  </nav>
+
+  <header>
+     <!-- Link de acessibilidade para conteúdo principal -->
+    <nav class="s-menu" aria-label="Navegação principal">
+      <ul class="navegacao-lista">
+        <li class="s-menu__item">
+          <a href="/" class="nav-link" aria-current="page">Página Inicial</a>
+        </li>
+        <li class="s-menu__item">
+          <a  href="#tobey-maguire" class="nav-link">Tobey Maguire</a>
+        </li>
+        <li class="s-menu__item s-menu__icon" aria-label="Logo Spider-Man Multiverso">
+          <img src="./assets/images/icons/spider.svg" alt="Spider-Man Multiverse">
+        </li>
+        <li class="s-menu__item">
+          <a href="#" class="nav-link">Tom Holland</a>
+        </li>
+        <li class="s-menu__item">
+          <a href="#" class="nav-link">Andrew Garfield</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
   <div class="s-container">
     <div class="s-cards-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
       <a href="./pages/tobey-maguire/spiderman1.html" class="s-card" id="spider-man-01">
