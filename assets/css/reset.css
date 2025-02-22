@@ -17,14 +17,6 @@
   -webkit-tap-highlight-color: transparent; /* Remove highlight em mobile */
 }
 
-/* Reset adicional para elementos específicos */
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  line-height: 1.15; /* Padroniza line-height no IE */
-}
-
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
