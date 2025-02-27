@@ -4,17 +4,17 @@
   vertical-align: baseline;
   list-style: none;
   border: 0;
-  -webkit-text-size-adjust: 100%; /* Prevenção para iOS */
+  -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   color: #FFF;
   font-family: "Poppins", sans-serif;
-  -webkit-font-smoothing: antialiased; /* Melhora renderização em WebKit */
-  -moz-osx-font-smoothing: grayscale; /* Firefox macOS */
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
   font-size: 16px;
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent; /* Remove highlight em mobile */
+  -webkit-tap-highlight-color: transparent;
 }
 
 *, *:before, *:after {
@@ -24,12 +24,12 @@
 }
 
 :focus {
-  outline: 0; /* Remove outline padrão */
+  outline: 0;
   -webkit-tap-highlight-color: transparent;
 }
 
 img {
-  -webkit-user-drag: none; /* Previne drag de imagens no WebKit */
+  -webkit-user-drag: none; 
   /* biome-ignore lint/correctness/noUnknownProperty: <explanation> */
   -khtml-user-drag: none;
   -moz-user-drag: none;
