@@ -5,7 +5,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/DanAntunes/spider-man-multiverse)](https://github.com/DanAntunes/spider-man-multiverse/network)
 [![GitHub issues](https://img.shields.io/github/issues/DanAntunes/spider-man-multiverse)](https://github.com/DanAntunes/spider-man-multiverse/issues)
 
-![Banner do Spider-Man](/assets/images/screenshot/gif.gif)
+![Banner do Spider-Man](/public/image/screenshot/gif.gif)
 
 Bem-vindo ao **Spider-Man Multiverso** – uma experiência web imersiva que celebra as diversas interpretações do Homem-Aranha, com efeitos 3D, animações fluidas e um design que vai te surpreender!
 
